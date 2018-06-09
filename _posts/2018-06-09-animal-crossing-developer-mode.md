@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Reverse engineering Animal Crossing's developer mode
-feature-img: "assets/img/debugmode/zurumode2_enable_feature.PNG"
-thumbnail: "assets/img/debugmode/zurumode2_enable_feature.PNG"
+feature-img: "assets/img/debugmode/debug_post_feature.png"
+thumbnail: "assets/img/debugmode/debug_post_feature.png"
 tags: [Animal Crossing, Reverse Engineering, ROM Hacking]
 ---
 
