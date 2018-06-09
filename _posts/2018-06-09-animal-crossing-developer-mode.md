@@ -91,7 +91,7 @@ Here's a first look at what these functions do:
 #### `zurumode_update`
 
 * Check some bits in `osAppNMIBuffer`
-* Conditionally update `zurumode_flag` base on these bits
+* Conditionally update `zurumode_flag` based on these bits
 * Print out a format string to the OS console.
 
 This kind of thing is usually useful
@@ -491,19 +491,19 @@ values:
     old_vals = old_vals AND new_vals
 
 The XOR operation will mark all of the bits that have changed between the two
-values. The AND operation then masks the new input to unset any bits that did
-not change. The result in `r0` is the set of new bits (button presses) in the
+values. The AND operation then masks the new input to unset any bits that are
+not currently set. The result in `r0` is the set of new bits (button presses) in the
 new value. If it's not empty, we're on the right path.
 
 For `r0` to be `0x1000`, the 4th out of the 16 button trace bits must have just changed.
 By setting a breakpoint after the XOR/AND operation I can figure out which
 button press causes this: it's the START button.
 
-The next question is how to get the first two bytes to be `0a01`. These bytes are
-updated near the end of `zerucheck_key_check` when we don't hit the code block that toggles
-`0x4(zuruKeyCheck)`.
+The next question is how to get `r5` to start out as `0xA`. `r5` and `r6` are loaded from
+`0x0(zuruKeyCheck)` at the beginning of the key check function, and updated near the end when we don't
+hit the code block that toggles `0x4(zuruKeyCheck)`.
 
-There are a few places just before where `r5` gets set to `0xa`:
+There are a few places just before where `r5` gets set to `0xA`:
 
 * `8040ed50`
 * `8040ed00`
