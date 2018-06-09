@@ -589,7 +589,11 @@ The full combo is:
 10. A+B
 11. START
 
-It works! This combo will work without patching the version number of the game.
+It works! Attach a controller to the second port and enter the code, and the debug displays
+will show up. After that you can start pressing buttons on the second (or even third) controller
+to start doing things.
+
+This combo will work without patching the version number of the game.
 You can even use this on a regular retail copy of the game without any cheat tools
 or console mods. Entering the combo a second time turns the zuru mode back off.
 
