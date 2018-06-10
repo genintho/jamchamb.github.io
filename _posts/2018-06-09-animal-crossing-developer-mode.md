@@ -630,3 +630,5 @@ such as the debug map screen and NES emulator select screen, and how to activate
 
 I'll also be posting write ups about reversing the dialog, event, and quest systems for the purpose
 of making mods.
+
+**Update**: The slides for the talk I did on this can be found [here]({{ site.baseurl }}/assets/pdf/secrets_of_animal_crossing.pdf).
