@@ -4,11 +4,7 @@
     box-sizing: border-box;
 }
 
-figure {
-    margin: 0;
-}
-
-// For correct line number width in Github Gists
+/* For correct line number width in Github Gists*/
 .gist table tbody tr td {
     box-sizing: content-box;
 }
@@ -17,20 +13,13 @@ html {
     background: $background-color;
 }
 
-// Typography
+/* Typography*/
 ::selection {
     background: $selection-color;
 }
 
 ::-moz-selection {
     background: $selection-color;
-}
-
-body {
-    color: $text-color;
-    font-family: $font-family-main;
-    font-size: $font-size;
-    word-wrap: break-word;
 }
 
 h1,
@@ -42,34 +31,11 @@ h6 {
     font-family: $font-family-headings;
     line-height: 1.3;
     margin: 0.67em 0;
-    a {
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
         color: $text-color;
     }
-}
-
-h1 {
-    font-size: 2.3em;
-}
-
-h2 {
-    font-size: 1.75em;
-}
-
-h3 {
-    font-size: 1.5em;
-}
-
-h4 {
-    font-size: 1.15em;
-}
-
-blockquote {
-    border-left: 2px solid darken($blockquote-color, 20%);
-    margin: 1em 1em;
-    padding: 0.75em 1em;
-    background-color: $blockquote-color;
-    box-shadow: 0 2px 2px $border-color;
-}
 
 blockquote p:last-child,
 footer p:last-child {
@@ -102,10 +68,6 @@ dt {
     font-weight: bold;
 }
 
-dd {
-    margin-left: 2em;
-}
-
 p,
 ol,
 ul,
@@ -115,40 +77,26 @@ dl,
     margin-bottom: 1em;
 }
 
-// KaTeX math display
+/* KaTeX math display*/
 .math-display {
     display: inline-block;
     width: 100%;
 }
 
-// Lists within lists
-li {
-    p {
+/* Lists within lists*/
+li p {
         display: inline;
     }
-    & > ul,
-    & > ol {
+li > ul,
+    li > ol {
         margin-bottom: 0;
         margin-left: 1em;
     }
-}
 
 ol,
 ul {
     list-style-position: outside;
     margin-left: 1em;
-}
-
-hr {
-    border: 0;
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid #fff;
-    margin: 1em 0;
-}
-
-a {
-    color: $link-color;
-    text-decoration: none;
 }
 
 iframe,
@@ -171,18 +119,6 @@ img[align=right] {
 /* ---- Responsive ---- */
 
 @media screen and (max-width: $break) {
-    h1 {
-        font-size: 2em;
-    }
-    h2 {
-        font-size: 1.5em;
-    }
-    h3 {
-        font-size: 1em;
-    }
-    h4 {
-        font-size: 0.9em;
-    }
     p,
     li {
         font-size: 0.8em;

@@ -1,20 +1,11 @@
-.site-footer {
-    @extend %padding-regular;
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    color: lighten($text-color, 30%);
-    font-size: 0.9em;
-
-    .footer-icons {
-        ul {
+.site-footer .footer-icons ul {
             list-style: none;
-            li {
+        }
+
+    .site-footer .footer-icons ul li {
                 display: inline;
             }
-            a:hover {
+
+    .site-footer .footer-icons ul a:hover {
                 color: darken($link-color, 15%);
             }
-        }
-    }
-}
